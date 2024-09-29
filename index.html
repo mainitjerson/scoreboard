@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_part">
+                <div class="left">
+                    <div class="black_bg">
+                        <h3 id="home">HOME</h3>
+                        <p id="home_score" class="score">0</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button class="btn_score1" onclick="homeAddOne()">+1</button>
+                        <button class="btn_score2" onclick="homeAddTwo()">+2</button>
+                        <button class="btn_score3" onclick="homeAddThree()">+3</button>
+                    </div>
+                    
+                </div>
+                <div class="middle_part">
+                    <div class="black_bg">
+                        <h4>TIME</h4>
+                        <p id="timer" class="time">12:00</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button id="pause-resume" class="btn_score1" onclick="toggleTimers()">Pause</button>
+                    </div>  
+                    <img src="images/nba-seeklogo.svg" alt="basketball" class="basketball">
+                </div>
+                <div class="right"> 
+                    <div class="black_bg">
+                        <h3 id="guest">GUEST</h3>
+                        <p id="guest_score" class="score">0</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button class="btn_score1" onclick="guestAddOne()">+1</button>
+                        <button class="btn_score2" onclick="guestAddTwo()">+2</button>
+                        <button class="btn_score3" onclick="guestAddThree()">+3</button>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="lower_part">
+                <div class="left">
+                    <div class="black_bg">
+                        <h3>FOULS</h3>
+                        <p id="homeFoulCounter" class="foul_count">0</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button class="btn_score1" onclick="homeFoul()">+1</button>
+                        <button id="noHomeFoul" class="btn_score1" onclick="homeFoulMinus()">-1</button>
+                    </div>
+                </div>
+                <div class="middle_part">
+                    <div class="black_bg">
+                        <h4>SHOTCLOCK</h4>
+                        <p id="shotClock" class="time">:24</p>
+                    </div>
+                    <div class="black_bg">
+                        <h4>PERIOD</h4>
+                        <p id="period">1</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button class="btn_score1" onclick="newGame()">New Game</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="black_bg">
+                        <h3>FOULS</h3>
+                        <p id="guestFoulCounter" class="foul_count">0</p>
+                    </div>
+                    <div class="btn_layout">
+                        <button class="btn_score1" onclick="guestFoul()">+1</button>
+                        <button id="noGuestFoul" class="btn_score1" onclick="guestFoulMinus()">-1</button>
+                    </div>
+                </div>
+            </div>           
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

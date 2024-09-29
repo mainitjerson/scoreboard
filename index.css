@@ -1,0 +1,87 @@
+@font-face {
+    font-family: CursedTimerUlil-Aznm;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+body {
+    box-sizing: border-box;
+    font-family: CursedTimerUlil-Aznm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+p{
+    margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 950px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #374151;
+    color: #fff;
+    position: relative;
+}
+.top_part {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left, .right, .middle_part {
+    text-align: center;
+}
+h3, h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h4{
+    margin: 0  0 10px 0;
+}
+.lower_part {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -40px;
+}
+.black_bg{
+    background-color: #080001; 
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 10px;
+}
+.score{
+    color: #F94F6D;
+    font-size: 80px;
+}
+#period{
+    color: #F94F6D;
+    font-size: 20px;
+}
+.time{
+    color: #F94F6D;
+    font-size: 60px;
+}
+img{
+    width: 280px;
+    height: 80px;
+    margin: 10px 0;
+}
+.foul_count{
+    color: #fff;
+    font-size: 80px;
+}
+.btn_layout{
+    margin-top: 10px;
+}
+.btn_score1, .btn_score2, .btn_score3{
+    border: 1px solid #9AABD8;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    color: #9AABD8;
+    font-family: CursedTimerUlil-Aznm; 
+}
